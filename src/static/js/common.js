@@ -1,3 +1,19 @@
 $(document).ready(function(){
-    alert(1);
+
+    $('.burger').click(function(){
+        $(this).toggleClass('active');
+        $('.dropdownmenu').fadeToggle();
+    });
+
+
+
+
+
+
+
+
+
+
+
+
 });

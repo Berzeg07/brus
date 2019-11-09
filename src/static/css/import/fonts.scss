@@ -1,4 +1,12 @@
 @font-face {
+    font-family: "Exo2ExtraBold";
+    src: url("../fonts/Exo2ExtraBold/Exo2ExtraBold.eot");
+    src: local('☺'), url("../fonts/Exo2ExtraBold/Exo2ExtraBold.woff") format('woff'), url("../fonts/Exo2ExtraBold/Exo2ExtraBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Exo2Bold";
     src: url("../fonts/Exo2Bold/Exo2Bold.eot");
     src: local('☺'), url("../fonts/Exo2Bold/Exo2Bold.woff") format('woff'), url("../fonts/Exo2Bold/Exo2Bold.ttf") format('truetype');

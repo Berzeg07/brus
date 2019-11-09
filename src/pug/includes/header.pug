@@ -1,1 +1,96 @@
-p Шапка
+.header
+    .header__desctop
+        .logo
+            .logo__inner
+                .logo__img
+                    img(src="img/logo-white.png")
+                ul.logo__article
+                    li
+                        |брусчатый <br>поселок
+                    li
+                        |жилой комплекс
+        .header__top
+            ul.top-nav
+                li
+                    a(href="#").about-link О комплексе
+                li
+                    a(href="#").photo-link Фотографии
+                li
+                    a(href="#").flat-link Выбрать квартиру
+                li
+                    a(href="#").spec-link 
+                        |Спецпредложения
+                        span.spec-link__count 
+                            b 6
+                li
+                    a(href="#").var-link Варианты покупки
+                li
+                    a(href="#").contact-link Контакты
+            
+            a(href="tel:74950322127").phone-header +7 (495) 032-21-27
+        
+        .header__bottom
+            ul.bottom-nav
+                li
+                    a(href="#").oneroom-link 1-комнатные квартиры
+                li
+                    a(href="#").tworoom-link 2-комнатные квартиры
+                li
+                    a(href="#").threeroom-link 3-комнатные квартиры
+                li
+                    a(href="#").finish-link квартиры с отделкой
+            
+            a(href="#").recept-btn Записаться на просмотр
+    
+    .mobile-menu
+        .mobile-menu__top
+            a(href="tel:74954320777").phone-header_mob +7 495 432-07-77
+        
+        .mobile-menu__bottom
+            .burger
+            a(href="#").spec-link.spec-link_mob
+                |Спецпредложения
+                span.spec-link__count 
+                    b 6
+            .icon
+        
+        .dropdownmenu
+            .dropdownmenu__top            
+                .logo-mob
+                    .logo-mob__img
+                        img(src="img/logo-green.png")
+                    ul.logo-mob__article
+                        li
+                            |брусчатый <br>поселок
+                        li
+                            |жилой комплекс
+                                        
+            .dropdownmenu__middle
+                .dropdownmenu__title Информация для клиентов:
+                
+                ul.mobile-nav.mobile-nav__top
+                    li
+                        a(href="#").about-link_mob О комплексе
+                    li
+                        a(href="#").photo-link_mob Фотографии
+                    li
+                        a(href="#").flat-link_mob Выбрать квартиру
+                    li
+                        a(href="#").var-link_mob Варианты покупки
+                    li
+                        a(href="#").contact-link_mob Контакты
+                    
+            .dropdownmenu__bottom
+                .dropdownmenu__title Квартиры в продаже:
+                
+                ul.mobile-nav.mobile-nav__bottom
+                    li
+                        a(href="#").oneroom-link 1-комнатные квартиры
+                    li
+                        a(href="#").tworoom-link 2-комнатные квартиры
+                    li
+                        a(href="#").threeroom-link 3-комнатные квартиры
+                    li
+                        a(href="#").finish-link квартиры с отделкой
+                
+                a(href="#").dropdownmenu__btn Выбрать квартиру
