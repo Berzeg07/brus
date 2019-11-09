@@ -1,6 +1,111 @@
 .footer
-    p Футер
-
+    .container
+        .footer__inner
+            .footer__left
+                .footer__item
+                    .logo-mob.footer__logo
+                        .logo-mob__img
+                            img(src="img/logo-green.png")
+                        
+                    ul.logo-mob__article
+                        li
+                            |брусчатый <br>поселок
+                        li
+                            |жилой комплекс
+                    
+                    ul.footer__list
+                        li
+                            span.consult-icon Нужна консультация? Звоните сейчас!
+                        li
+                            a(href="tel:74950322127").phone-black +7 (495) 032-21-27
+                        li
+                            span.string-bold  ЖК «Брусчатый посёлок» - официальный сайт:
+                        li
+                            |Красногорск, ул. Народного Ополчения, д. 2б
+                            
+                    ul.footer__list
+                        li
+                            span.string-bold Офис продаж: 
+                            |Красногорск, ул. Народного ополчения, д. 2Б, корп. 2, оф. 16
+                        li
+                            span.string-bold Email: 
+                            a(href="mailto:sale@bruschaty.ru").email-link sale@bruschaty.ru
+                        li
+                            span.string-bold  ЖК «Брусчатый посёлок» - официальный сайт:
+                        li
+                            |Красногорск, ул. Народного Ополчения, д. 2б
+                            
+                    span.string-bold.string-bold_mb График работы офиса продаж:
+                    ul
+                        li
+                            |C понедельника по пятницу 
+                            span.string-bold с 9:00 до 21:00
+                        li
+                            |Cуббота и воскресенье 
+                            span.string-bold с 10:00 до 17:00          
+            .footer__right                    
+                .footer__item
+                    .footer__title Категории:
+                    ul.footer__nav
+                        li
+                            a(href="#") Однокомнатные
+                        li
+                            a(href="#") Двухкомнатные
+                        li
+                            a(href="#") Трехкомнатные 
+                        li
+                            a(href="#") Квартиры с отделкой
+                        li
+                            a(href="#") Спецпредложение
+                        li
+                            a(href="#") Шахматка корп.7, корп. 8
+                    
+                    a(href="#").btn Заявка на просмотр         
+                                   
+                    
+                .footer__item
+                    .footer__title Варианты покупки:
+                    ul.footer__nav
+                        li
+                            a(href="#") Рассрочка
+                        li
+                            a(href="#") Ипотека
+                        li
+                            a(href="#") Материнский капитал 
+                        li
+                            a(href="#") Субсидии
+                        li
+                            a(href="#") Жилищные сертификаты
+                        li
+                            a(href="#") Военная ипотека
+                    
+                    a(href="#").btn Рассчитать ипотеку
+                    
+                .footer__item
+                    .footer__title Информация:
+                    ul.footer__nav
+                        li
+                            a(href="#") Фотографии
+                        li
+                            a(href="#") Ход строительства
+                        li
+                            a(href="#") Инфраструктура 
+                        li
+                            a(href="#") О застройщике
+                        li
+                            a(href="#") Документы
+                        li
+                            a(href="#") Контакты
+                    
+                    a(href="#").btn Задать вопрос
+            
+        .footer__bottom
+            a(href="#").inst-link
+                img(src="img/inst.png")
+                    
+            .metrika    
+                img(src="img/metr.png")
+                
 
 
 include ./footer-modals.pug
@@ -13,6 +118,5 @@ script(src="libs/wow/wow.js")
 script(src="js/jquery.maskedinput.min.js")
 script(src="libs/jquery-ui-select/jquery-ui.min.js")
 script(src="libs/autosize/autosize.min.js")
-script(src="libs/bootstrap/js/bootstrap.min.js")
 script(src="libs/owl.carusel-2.3.4/owl.carousel.min.js")
 script(src="js/common.js")
