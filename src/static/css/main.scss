@@ -14,6 +14,47 @@ body {
     padding: 0 15px;
 }
 
+.checkbox-block input {
+    display: none;
+}
+
+.checkbox-block input + label {
+    font-size: 14px;
+    color: #3C3A41;
+    display: inline-block;
+    position: relative;
+    padding-left: 32px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.checkbox-block input + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: white;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+}
+
+.checkbox-block input + label:before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 9px;
+    width: 18px;
+    height: 14px;
+    background: url("../img/check.png") no-repeat center;
+    z-index: 10;
+    display: none;
+}
+
+.checkbox-block input:checked + label:before {
+    display: block;
+}
+
 .btn {
     font-family: "Gilroy-Medium";
     display: inline-block;
@@ -407,6 +448,7 @@ body {
     top: 88px;
     left: 0;
     display: none;
+    z-index: 100;
     @media(min-width: 768px) {
         text-align: center;
     }
@@ -720,5 +762,280 @@ body {
             max-width: 340px;
             width: 100%;
         }
+    }
+}
+
+.recept-form {
+    background: #FEDF3B;
+    position: relative;
+}
+
+.recept-form__main {
+    padding: 20px 16px;
+    text-align: center;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: url("../img/machan.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        @media(min-width: 1700px) {
+            display: block;
+            width: 230px;
+            height: 290px;
+        }
+        @media(min-width: 1800px) {
+            width: 290px;
+            height: 366px;
+        }
+        @media(min-width: 1900px) {
+            left: 45px;
+            width: 340px;
+            height: 429px;
+        }
+    }
+}
+
+.recept-form__list-title {
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.recept-form__inner {
+    max-width: 343px;
+    margin: 0 auto;
+    text-align: left;
+    @media(min-width: 992px) {
+        max-width: 600px;
+        margin-left: 0;
+    }
+    @media(min-width: 1280px) {
+        max-width: calc(100% - 380px);
+        display: flex;
+    }
+    @media(min-width: 1600px) {
+        justify-content: flex-end;
+    }
+
+    li {
+        &:first-child {
+            @media(min-width: 1280px) {
+                margin-right: 20px;
+                max-width: 596px;
+            }
+            @media(min-width: 1366px) {
+                margin-right: 47px;
+                max-width: 670px;
+            }
+        }
+    }
+}
+
+.form-action__inp-block {
+    @media(min-width: 992px) {
+        width: 352px;
+    }
+    @media(min-width: 1280px) {
+        width: 300px;
+    }
+    @media(min-width: 1366px) {
+        width: 285px;
+    }
+    @media(min-width: 1500px) {
+        width: 352px;
+    }
+}
+
+.recept-form__check {
+    width: 220px;
+    margin: 25px auto 10px;
+}
+
+.recept-form__list {
+    font-size: 18px;
+    @media(min-width: 1280px) {
+        font-size: 22px;
+    }
+
+    li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 16px;
+        @media(min-width: 1280px) {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 3px;
+            width: 16px;
+            height: 16px;
+            background: url("../img/ellipse.png") no-repeat center;
+        }
+
+        &:first-child {
+            @media(max-width: 767px) {
+                padding-right: 30px;
+            }
+        }
+
+        &:nth-child(2) {
+            @media(max-width: 767px) {
+                padding-right: 55px;
+            }
+        }
+    }
+
+    b {
+        font-family: "Gilroy-Bold";
+    }
+}
+
+.inp {
+    font-family: "Gilroy-Regular";
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 0 20px;
+    color: #999999;
+    font-size: 18px;
+    border: none;
+}
+
+.form-btn {
+    font-family: "Exo2Bold";
+    cursor: pointer;
+    max-width: 343px;
+    width: 100%;
+    height: 60px;
+    background: #F42628;
+    box-shadow: 0 2px 15px #FF4345;
+    border-radius: 60px;
+    text-align: center;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.recept-form__inp {
+    margin-bottom: 20px;
+}
+
+.form-action {
+    background: #0D9A2C;
+    padding: 16px 10px 20px;
+    color: white;
+    text-align: center;
+    @media(min-width: 992px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media(min-width: 1280px) {
+        width: 167px;
+        padding: 0;
+    }
+}
+
+.form-action__inner {
+    @media(min-width: 992px) {
+        text-align: right;
+        padding-right: 10px;
+    }
+    @media(min-width: 1280px) {
+        width: 300px;
+        position: relative;
+        left: -75px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: -75px;
+            top: 0;
+            width: 242px;
+            height: 100%;
+            background: url("../img/bg-green.png") no-repeat center;
+            background-size: cover;
+            z-index: 0;
+        }
+    }
+}
+
+.form-action__date {
+    font-family: "Gilroy-Bold";
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 20;
+}
+
+.form-action__list {
+    position: relative;
+    z-index: 20;
+
+    li {
+        &:first-child {
+            font-family: "Gilroy-Bold";
+            font-size: 32px;
+        }
+    }
+}
+
+.form-action__price {
+    li {
+        display: inline-block;
+
+        &:first-child {
+            font-family: "Gilroy-Bold";
+            font-size: 72px;
+        }
+
+        &:last-child {
+            font-family: "Gilroy-Medium";
+            font-size: 24px;
+            text-align: left;
+            line-height: 20px;
+            padding-left: 10px;
+        }
+    }
+}
+
+.recept-form__title {
+    font-family: "Gilroy-Medium";
+    font-size: 26px;
+    margin-bottom: 12px;
+    @media(min-width: 992px) {
+        text-align: left;
+        font-size: 36px;
+        margin-bottom: 22px;
+    }
+    @media(min-width: 1600px) {
+        text-align: center;
     }
 }

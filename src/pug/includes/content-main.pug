@@ -1,1 +1,39 @@
-p Контент
+form.recept-form
+    .form-action
+        .form-action__inner
+            .form-action__date Только до 31 октября!
+            ul.form-action__list
+                li
+                    |Квартиры от
+                li
+                    ul.form-action__price
+                        li
+                            |3,39
+                        li
+                            |млн <br>
+                            |руб.       
+        
+    .recept-form__main
+        .recept-form__title Запишитесь на просмотр квартиры!
+        
+        ul.recept-form__inner
+            li
+                span.recept-form__list-title Офис застройщика работает ежедневно, без выходных:
+                ul.recept-form__list
+                    li
+                        |C понедельника по пятницу с 9:00 до 21:00
+                    li   
+                        |суббота и воскресенье с 10:00 до 17:00
+                    li
+                        |Записаться можно по телефону:  
+                        b +7(495) 123-45-67 
+                        |или онлайн
+            li.form-action__inp-block
+                input(type="text" placeholder="Имя").inp.recept-form__inp
+                input(type="text" placeholder="Телефон").inp.recept-form__inp.phone-inp
+                button(type="submit").form-btn Отправить заявку
+                .checkbox-block.recept-form__check
+                    input(type="checkbox" id="check" checked)
+                    label(for="check") Я согласен на обработку<br> персональных данных
+                    
+                    

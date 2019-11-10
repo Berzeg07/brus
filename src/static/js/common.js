@@ -5,7 +5,7 @@ $(document).ready(function(){
         $('.dropdownmenu').fadeToggle();
     });
 
-
+    $(".phone-inp").mask("7 (999) 999-99-99");
 
 
 
