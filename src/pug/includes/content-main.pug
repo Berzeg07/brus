@@ -1,3 +1,56 @@
+.infrastructure_wrapperMap
+    #map(data-latlag="55.834977,37.317508" data-markers="/infrastructure/place.json" style="position:relative;")
+    .infrastructure_fillter
+        ul.infrastructure_list
+            li
+                button.infrastructure_item(data-group="shop")
+                    .infrastructure_icon.infrastructure_icon-shop
+                    .infrastructure_subtitle
+                        |Магазины
+
+            li
+                button.infrastructure_item(data-group="med")
+                    .infrastructure_icon.infrastructure_icon-med
+                    .infrastructure_subtitle Поликлиники / Больницы
+
+
+            li
+                button.infrastructure_item(data-group="kids")
+                    .infrastructure_icon.infrastructure_icon-kids
+                    .infrastructure_subtitle Детские сады
+
+
+            li
+                button.infrastructure_item(data-group="shcool")
+                    .infrastructure_icon.infrastructure_icon-shcool
+                    .infrastructure_subtitle Школы / ВУЗы
+
+            li
+                button.infrastructure_item(data-group="park")
+                    .infrastructure_icon.infrastructure_icon-park
+                    .infrastructure_subtitle Парки 
+
+            li
+                button.infrastructure_item(data-group="food")
+                    .infrastructure_icon.infrastructure_icon-food
+                    .infrastructure_subtitle Кафе / Бары
+
+            li
+                button.infrastructure_item(data-group="bank")
+                    .infrastructure_icon.infrastructure_icon-bank
+                    .infrastructure_subtitle Банки
+
+            li
+                button.infrastructure_item(data-group="sport")
+                    .infrastructure_icon.infrastructure_icon-sport
+                    .infrastructure_subtitle Фитнес залы
+
+        .infrastructure_control
+            button.infrastructure_btn.infrastructure_btnShow.active Показать все
+            button.infrastructure_btn.infrastructure_btnHide Скрыть все
+
+
+
 form.recept-form
     .form-action
         .form-action__inner
@@ -12,10 +65,10 @@ form.recept-form
                         li
                             |млн <br>
                             |руб.       
-        
+
     .recept-form__main
         .recept-form__title Запишитесь на просмотр квартиры!
-        
+
         ul.recept-form__inner
             li
                 span.recept-form__list-title Офис застройщика работает ежедневно, без выходных:
@@ -35,5 +88,3 @@ form.recept-form
                 .checkbox-block.recept-form__check
                     input(type="checkbox" id="check" checked)
                     label(for="check") Я согласен на обработку<br> персональных данных
-                    
-                    

@@ -14,6 +14,37 @@ body {
     padding: 0 15px;
 }
 
+.Balloon {
+    position: absolute;
+    left: -90px !important;
+    width: 181px;
+    padding: 14px 18px 14px 15px;
+    background-color: #FFF;
+    box-shadow: 0 2px 7px 0 rgba(63, 63, 63, 0.16);
+
+    &_close {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        opacity: 0.6;
+    }
+
+    &_inner {
+        & > ymaps {
+            width: auto !important;
+            text-align: center;
+        }
+    }
+
+    &_content {
+        padding-left: 17px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 1.08;
+        color: #5c5c5c;
+    }
+}
+
 .checkbox-block input {
     display: none;
 }
@@ -1038,4 +1069,23 @@ body {
     @media(min-width: 1600px) {
         text-align: center;
     }
+}
+
+.infrastructure_wrapperMap {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 582px;
+    position: relative;
+}
+
+.infrastructure_fillter{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.infrastructure_wrapperMap #map {
+    width: 100%;
+    height: 100%;
 }
