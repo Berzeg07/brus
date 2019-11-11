@@ -8,7 +8,19 @@ $(document).ready(function() {
     $(".phone-inp").mask("7 (999) 999-99-99");
 
 
-
+    var bannerSlider = new Swiper('.banner-slider', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
 
 
 
@@ -134,32 +146,11 @@ class Map {
                     e.get('target').options.set('zIndex', 0);
                     objectManager.objects.balloon.close();
                 }
-            }); // console.log(objectManager.objects);
-            // console.log('Test!!!!!');
-            // function onObjectEvent (e) {
-            //   var objectId = e.get('objectId');
-            //   if (e.get('type') == 'mouseenter') {
-            //     // РњРµС‚РѕРґ setObjectOptions РїРѕР·РІРѕР»СЏРµС‚ Р·Р°РґР°РІР°С‚СЊ РѕРїС†РёРё РѕР±СЉРµРєС‚Р° "РЅР° Р»РµС‚Сѓ".
-            //     objectManager.objects.setObjectOptions(objectId, {}, {
-            //       zIndexHover: 1000
-            //     });
-            //   } else {
-            //     objectManager.objects.setObjectOptions(objectId, {
-            //       // zIndexHover: 0
-            //     });
-            //   }
-            // }
-            // objectManager.objects.events.add(['mouseenter', 'mouseleave'], onObjectEvent);
+            });
 
             objectManager.objects.events.add('mouseenter', function(e) {
                 e.get('target').options.set('zIndexHover', 1000);
-            }); // objectManager.objects.events.add('mouseleave', function (e) {
-            //   e.get('target').options.set('zIndexHover', 0);
-            // });
-            // objectManager.objects.events.add('balloonclose', function (e) {
-            //   console.log(objectManager.objects);
-            //   console.log('Test!!!');
-            // });
+            });
 
             objectManager.objects.options.set('balloonOffset', [98, 7]);
             objectManager.objects.options.set('balloonLayout', MyBalloonLayout);
