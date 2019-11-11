@@ -170,7 +170,7 @@ class Map {
             }).done(function(data) {
                 objectManager.add(data);
             });
-            ymapsTouchScroll(nameMap);
+            // ymapsTouchScroll(nameMap);
         };
 
         ymaps.ready(initMap);

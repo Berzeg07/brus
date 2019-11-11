@@ -1072,20 +1072,121 @@ body {
 }
 
 .infrastructure_wrapperMap {
-    width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 582px;
+    margin-top: 70px;
+    overflow: hidden;
     position: relative;
+    @media(min-width: 768px) {
+        height: 698px;
+    }
 }
 
-.infrastructure_fillter{
+.infrastructure_list {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    column-count: 2;
+    @media(min-width: 768px) {
+        width: auto;
+        column-count: 4;
+    }
+    @media (min-width: 1024px){
+        column-count: auto;
+    }
+}
+
+.infrastructure_subtitle {
+    text-align: left;
+}
+
+.infrastructure_list li {
+    margin-bottom: 20px;
+}
+
+.infrastructure_item-disbaled {
+    opacity: 0.3;
+}
+
+.infrastructure_control {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+
+    .infrastructure_btn:not(:last-of-type) {
+        margin-right: 44px;
+    }
+}
+
+.infrastructure_btn.active {
+    color: #000;
+    cursor: default;
+    pointer-events: none;
+}
+
+.infrastructure_btn,
+.infrastructure_item {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+}
+
+.infrastructure_btn {
+    font-size: 16px;
+    color: rgba(0,0,0,0.3);
+    transition: color 0.2s;
+}
+
+.infrastructure_item {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.infrastructure_icon {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.infrastructure_fillter {
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
+    padding: 15px 20px 30px;
+    background-color: #fff;
+    border-top: 2px solid #129a28;
+    box-shadow: 0 20px 29px 0 rgba(0,0,0,0.11);
+    z-index: 20;
+    @media(max-width: 767px) {
+        position: relative;
+    }
+    @media(min-width: 768px) {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 20px);
+        padding: 30px;
+        border-top: none;
+    }
+    @media (min-width: 1024px) {
+        top: 40px;
+        left: 40px;
+        transform: translateX(0);
+        width: auto;
+    }
+    @media (min-width: 1280px){
+        left: 70px;
+    }
 }
 
 .infrastructure_wrapperMap #map {
     width: 100%;
     height: 100%;
+    @media(max-width: 767px) {
+        height: 412px;
+    }
 }
