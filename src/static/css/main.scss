@@ -14,6 +14,27 @@ body {
     padding: 0 15px;
 }
 
+.main-title {
+    font-family: "Gilroy-Medium";
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    @media(min-width: 992px) {
+        font-size: 40px;
+    }
+}
+
+.text-content__article {
+    p {
+        font-size: 20px;
+        margin-bottom: 20px;
+
+        b {
+            font-family: "Gilroy-Bold";
+        }
+    }
+}
+
 .Balloon {
     position: absolute;
     left: -90px !important;
@@ -1192,15 +1213,17 @@ body {
 }
 
 .banner-slider {
-    .swiper-button-prev,.swiper-button-next{
+    .swiper-button-next,
+    .swiper-button-prev {
         width: 60px;
         height: 60px;
-        @media(max-width: 991px){
+        @media(max-width: 991px) {
             width: 40px;
             height: 40px;
             top: 60%;
         }
     }
+
     .swiper-button-prev {
         background: url("../img/arrow_back.png") no-repeat center;
         background-size: contain;
@@ -1229,7 +1252,7 @@ body {
     .swiper-pagination-bullets {
         bottom: 25px;
         opacity: 1;
-        @media(max-width: 992px){
+        @media(max-width: 992px) {
             bottom: 7px;
         }
     }
@@ -1286,9 +1309,10 @@ body {
 }
 
 .banner-action__logo {
-    @media(min-width: 992px){
+    @media(min-width: 992px) {
         display: none;
     }
+
     .logo-mob__img {
         width: 88px;
     }
@@ -1299,12 +1323,14 @@ body {
                 color: #FBD71A;
                 font-size: 24px;
                 margin-bottom: 0;
-                &:after{
+
+                &:after {
                     background: white;
                     width: 100%;
                 }
             }
-            &:last-child{
+
+            &:last-child {
                 color: white;
                 font-size: 18px;
             }
@@ -1323,16 +1349,16 @@ body {
     font-size: 16px;
 }
 
-.banner-slider__wrap{
+.banner-slider__wrap {
     position: relative;
 }
 
-.banner-action__img{
+.banner-action__img {
     width: 190px;
     height: 190px;
     border-radius: 10em;
     overflow: hidden;
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
         display: none;
     }
 }
@@ -1340,13 +1366,16 @@ body {
 .banner-action {
     display: block;
     padding: 10px;
-    background: url('../img/action-bg.jpg') no-repeat center;
+    background: url("../img/action-bg.jpg") no-repeat center;
     background-size: cover;
     text-align: center;
-    .logo-mob, .logo-mob__article, .logo-mob__img{
+
+    .logo-mob,
+    .logo-mob__article,
+    .logo-mob__img {
         vertical-align: middle;
     }
-    @media(min-width: 992px){
+    @media(min-width: 992px) {
         position: absolute;
         background: none;
         right: 100px;
@@ -1354,16 +1383,16 @@ body {
         transform: translateY(-50%);
         z-index: 20;
     }
-    @media(min-width: 1600px){
+    @media(min-width: 1600px) {
         top: 30%;
     }
 }
 
-.banner-action__tooltip{
+.banner-action__tooltip {
     margin: 0 auto 30px;
     position: relative;
     left: 28px;
-    @media(min-width: 992px){
+    @media(min-width: 992px) {
         margin: 0;
         left: 104px;
         margin-bottom: -37px;
@@ -1474,4 +1503,224 @@ body {
     &:after {
         background: url("../img/drone.png") no-repeat center;
     }
+}
+
+.text-content {
+    padding-top: 20px;
+}
+
+.action {
+    background: #FDDE1A;
+    padding: 14px 0 26px;
+    margin-bottom: 18px;
+    position: relative;
+    margin-top: 47px;
+    @media(min-width: 1800px) {
+        padding: 4px 0 5px;
+    }
+
+    &__title {
+        font-family: "Gilroy-Bold";
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &__title_mob {
+        margin-bottom: 16px;
+        @media(min-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__title_lg {
+        font-family: "Gilroy-Bold";
+        color: #D80530;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 22px;
+        @media(min-width: 375px) {
+            font-size: 26px;
+        }
+        @media(min-width: 768px) {
+            text-align: left;
+        }
+        @media(min-width: 992px) {
+            font-size: 22px;
+        }
+        @media(min-width: 1280px) {
+            font-size: 32px;
+        }
+    }
+
+    &__article {
+        font-family: "Gilroy-Regular";
+        font-size: 20px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: center;
+        @media(min-width: 768px) {
+            width: 70%;
+            text-align: left;
+        }
+        @media(min-width: 992px) {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        @media(min-width: 1280px) {
+            b {
+                max-width: 440px;
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        @media(min-width: 1500px) {
+            max-width: 767px;
+            width: 100%;
+
+            b {
+                max-width: 753px;
+                font-size: 26px;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 34px;
+            height: 25px;
+            background: url("../img/quote.png") no-repeat center;
+            bottom: 0;
+            right: 0;
+            @media(max-width: 1499px) {
+                display: none;
+            }
+        }
+    }
+
+    &__call {
+        text-align: center;
+
+        span {
+            font-family: "Gilroy-Semibold";
+            font-size: 26px;
+        }
+        @media(min-width: 992px) {
+            text-align: left;
+            padding-top: 28px;
+            padding-right: 20px;
+        }
+        @media(min-width: 1280px) {
+            width: 26%;
+            padding-right: 0;
+        }
+        @media(min-width: 1800px) {
+            width: 30%;
+        }
+
+        a {
+            font-family: "Gilroy-Semibold";
+            color: #304153;
+            font-size: 20px;
+            display: inline-block;
+            margin-bottom: 21px;
+            @media(min-width: 375px) {
+                font-size: 26px;
+            }
+            @media(min-width: 992px) {
+                font-size: 22px;
+            }
+            @media(min-width: 1280px) {
+                font-size: 26px;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 171px;
+        width: 100%;
+        height: 169px;
+        margin: 0 auto;
+        border-radius: 10em;
+        background: white;
+        padding: 3px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 10em;
+        }
+        @media(min-width: 992px) {
+            margin: 0 37px 0 0;
+        }
+        @media(min-width: 1500px) {
+            margin: 0 37px 0 60px;
+        }
+        @media(min-width: 1800px) {
+            top: -20px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 34px;
+            height: 25px;
+            background: url("../img/quote.png") no-repeat center;
+            left: -40px;
+            @media(max-width: 1499px) {
+                display: none;
+            }
+            @media(min-width: 1800px) {
+                top: 40px;
+                left: -50px;
+            }
+        }
+    }
+
+    &__item {
+        @media(min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        @media(min-width: 992px) {
+            margin-bottom: 0;
+        }
+        @media(min-width: 1280px) {
+            width: 70%;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        margin-top: -48px;
+        @media(min-width: 768px) {
+            margin-top: 0;
+            max-width: 700px;
+        }
+        @media(min-width: 992px) {
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.action__btn {
+    max-width: 522px;
+    font-family: "Gilroy-Bold";
+    height: 62px;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    background: #FE4C00;
+    color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
