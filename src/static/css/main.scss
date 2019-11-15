@@ -1762,10 +1762,10 @@ body {
     width: 100%;
     margin-bottom: 25px;
     text-align: center;
-    @media(min-width: 1280px){
+    @media(min-width: 1280px) {
         max-width: 208px;
     }
-    @media(min-width: 1600px){
+    @media(min-width: 1600px) {
         max-width: 258px;
     }
 }
@@ -1793,7 +1793,7 @@ body {
 
 .fast-action__inner {
     text-align: center;
-    @media(min-width: 1280px){
+    @media(min-width: 1280px) {
         display: flex;
         justify-content: space-between;
     }
@@ -1806,11 +1806,12 @@ body {
         vertical-align: top;
         margin: 5px;
         text-align: left;
-        @media(min-width: 1600px){
+        @media(min-width: 1600px) {
             margin: 0;
         }
     }
-    .fast-action__img{
+
+    .fast-action__img {
         text-align: center;
     }
 }
@@ -1868,8 +1869,9 @@ body {
     li {
         display: inline-block;
         vertical-align: middle;
-        &:first-child{
-            @media(max-width: 374px){
+
+        &:first-child {
+            @media(max-width: 374px) {
                 margin-bottom: 10px;
             }
         }
@@ -1915,10 +1917,10 @@ body {
 .fast-action__form {
     max-width: 316px;
     width: 100%;
-    @media(min-width: 1280px){
+    @media(min-width: 1280px) {
         max-width: 270px;
     }
-    @media(min-width: 1600px){
+    @media(min-width: 1600px) {
         max-width: 316px;
     }
 }
@@ -1954,10 +1956,10 @@ body {
     max-width: 364px;
     width: 100%;
     padding-top: 15px;
-    @media(min-width: 1280px){
+    @media(min-width: 1280px) {
         max-width: 320px;
     }
-    @media(min-width: 1600px){
+    @media(min-width: 1600px) {
         max-width: 364px;
     }
 }
@@ -1984,7 +1986,7 @@ body {
     line-height: 52px;
 }
 
-.fast-action__slider {
+.fast-action__slider, .advantages-slider {
     padding-bottom: 35px;
 
     .swiper-pagination-bullet {
@@ -1997,5 +1999,230 @@ body {
 
     .swiper-pagination-bullet-active {
         background: #FE4C00;
+    }
+
+
+}
+
+.advantages-slider-wrap{
+    position: relative;
+    .swiper-button-next-unique,
+    .swiper-button-prev-unique {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 43%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        @media(max-width: 1919px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .swiper-button-prev-unique {
+        left: -60px;
+        background: url("../img/nav-left.png") no-repeat center;
+        background-size: contain;
+        @media(max-width: 1919px) {
+            left: -15px;
+        }
+    }
+
+    .swiper-button-next-unique{
+        right: -60px;
+        background: url("../img/nav-right.png") no-repeat center;
+        background-size: contain;
+        @media(max-width: 1919px) {
+            right: -15px;
+        }
+    }
+}
+
+.advantages-slider__item_metro{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        top: 19px;
+        right: 19px;
+        width: 111px;
+        height: 134px;
+        background: url('../img/metro-icon.png') no-repeat center;
+    }
+}
+
+.advantages-slider {
+    padding-bottom: 45px;
+    .swiper-pagination{
+        bottom: -4px;
+    }
+
+}
+
+.advantages-slider__img {
+    img {
+        display: block;
+    }
+}
+
+.advantages-slider__item {
+    position: relative;
+    width: 260px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.advantages-slider__article {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(99, 173, 255, 0) 0%, rgba(48, 110, 180, 0.663) 30.73%);
+    border-radius: 0 0 10px 10px;
+    padding: 34px 0 12px;
+    color: white;
+    font-family: "Gilroy-Bold";
+
+    li {
+        padding-left: 15px;
+
+        &:first-child {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            font-size: 21px;
+        }
+    }
+}
+
+.advantages{
+    .main-title{
+        margin-bottom: 25px;
+        @media(min-width: 992px){
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.advantages-slider__article_darken{
+    background: linear-gradient(180deg, rgba(99, 173, 255, 0) 0%, rgba(32, 65, 102, 0.4914) 30.73%);
+}
+
+.advantages-slider__article_check,
+.advantages-slider__article_key {
+    ul {
+        position: relative;
+        padding-left: 85px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 71px;
+            height: 63px;
+        }
+
+        li {
+            padding-left: 0;
+        }
+    }
+}
+
+.advantages-slider__article_key {
+    ul {
+        padding-left: 124px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: -16px;
+            width: 80px;
+            height: 80px;
+            border: 3px solid #FEFF0E;
+            border-radius: 10em;
+        }
+    }
+}
+
+.advantages-slider__article_check ul:after {
+    background: url("../img/check-big.png") no-repeat center;
+}
+
+.advantages-slider__article_key ul:after {
+    left: 28px;
+    top: 25%;
+    width: 80px;
+    height: 76px;
+    background: url("../img/key-img2.png") no-repeat center;
+}
+
+.ipoteca-slide {
+    background: #FFCC19;
+    padding: 12px 22px 37px;
+}
+
+.ipoteca-slide__list-top {
+    text-align: center;
+    color: #071320;
+    margin-bottom: 15px;
+
+    li {
+        &:not(:last-child) {
+            font-family: "Gilroy-Bold";
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            font-family: "Gilroy-Semibold";
+            font-size: 24px;
+        }
+
+        &:nth-child(2) {
+            border-bottom: 1px solid #000000;
+        }
+    }
+}
+
+.ipoteca-slide__list-bottom {
+    color: #000000;
+    text-align: center;
+    background: url('../img/coins-bg.png') no-repeat 0px 6px;
+    padding: 18px 0px 12px 35px;
+
+    li {
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+
+        &:first-child {
+            font-family: "Gilroy-Bold";
+            font-size: 72px;
+            margin-right: 7px;
+        }
+
+        &:last-child {
+            text-transform: uppercase;
+            padding-top: 10px;
+
+
+
+            span {
+                font-family: "Gilroy-Semibold";
+                font-size: 24px;
+                b {
+                    font-size: 28px;
+                    font-family: "Gilroy-Bold";
+                }
+            }
+        }
     }
 }

@@ -17,9 +17,9 @@ $(document).ready(function() {
             prevEl: '.swiper-button-prev',
         },
         pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+            el: '.swiper-pagination',
+            clickable: true,
+        },
     });
 
     var fastActionSlider = new Swiper('.fast-action__slider', {
@@ -27,9 +27,69 @@ $(document).ready(function() {
         spaceBetween: 0,
         loop: true,
         pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    var bannerSlider = new Swiper('.advantages-slider', {
+        slidesPerView: 6,
+        spaceBetween: 40,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next-unique',
+            prevEl: '.swiper-button-prev-unique',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            599: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1279: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1599: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1600: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            },
+            1799: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            },
+            1800: {
+                slidesPerView: 6,
+                spaceBetween: 40,
+            }
+        }
     });
 
 
