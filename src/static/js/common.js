@@ -22,6 +22,16 @@ $(document).ready(function() {
       },
     });
 
+    var fastActionSlider = new Swiper('.fast-action__slider', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
 
 
 
