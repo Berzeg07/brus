@@ -562,66 +562,215 @@
         .swiper-button-next-unique
         .swiper-button-prev-unique
               
+.banks.container
+    h2.main-title Ипотека от 9 ведущих банков с первым взносом от 10%
+    .banks-slider-wrap
+        .banks-slider.swiper-container
+            .swiper-wrapper.swiper-wrapper_bank
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/sber.png")
+                
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/vtb.png")
+                                
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/ab-bank.png")
+                                
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/rf-bank.png")
+                                
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/voz-bank.png")
+                            
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/mos-bank.png")
+                            
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/sv-bank.png")
+                            
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/kr-bank.png")
+                            
+                .swiper-slide.swiper-slide_bank
+                    .banks-slider__item
+                        img(src="img/ros-bank.png")
+                        
         
+        .swiper-button-next-bank
+        .swiper-button-prev-bank                
+    
+    .banks__link
+        a(href="#").btn.banks__btn Рассчитать ипотеку    
+        
+.flat-plans
+    h2.main-title Квартиры от 33 до 70м2 - 20 вариантов планировок:
+    
+    ul.plans-list
+        li
+            .plans-list__item
+                .plans-list__img
+                    img(src="img/plan-1.png")
+                
+                .plans-list__price
+                    span
+                        |от 
+                        b 3,39
+                    span млн руб.
+                            
+                .plans-list__link
+                    a(href="#") 1 - комнатные
+        li
+            .plans-list__item
+                .plans-list__img
+                    img(src="img/plan-2.png")
+                
+                .plans-list__price
+                    span
+                        |от 
+                        b 5,18
+                    span млн руб.
+                
+                .plans-list__link
+                    a(href="#") 2 - комнатные
+        li
+            .plans-list__item
+                .plans-list__img
+                    img(src="img/plan-3.png")
+                        
+                .plans-list__price
+                    span
+                        |от 
+                        b 7,07
+                    span млн руб.
+                
+                .plans-list__link
+                    a(href="#") 3 - комнатные
+        li
+            .plans-list__item
+                .plans-list__img
+                    img(src="img/plan-4.png")
+                        
+                .plans-list__price.plans-list__price_green
+                    |отделка <br>под ключ
+                
+                .plans-list__link
+                    a(href="#") с отделкой
+                        
 
-.infrastructure_wrapperMap
-    .infrastructure_fillter
-        ul.infrastructure_list
-            li
-                button.infrastructure_item(data-group="shop")
-                    .infrastructure_icon.infrastructure_icon-shop
-                        img(src="img/small_group_14.png")
-                    .infrastructure_subtitle
-                        |Магазины
-
-            li
-                button.infrastructure_item(data-group="med")
-                    .infrastructure_icon.infrastructure_icon-med
-                        img(src="img/small_group_15.png")
-                    .infrastructure_subtitle Поликлиники / Больницы
 
 
-            li
-                button.infrastructure_item(data-group="kids")
-                    .infrastructure_icon.infrastructure_icon-kids
-                        img(src="img/small_group_16.png")
-                    .infrastructure_subtitle Детские сады
+.const-progress
+    h2.main-title Ход строительства
+    .const-slider.swiper-container
+        .swiper-wrapper
+            .swiper-slide
+                .const-slider__item
+                    .const-slider__img
+                        img(src="img/c1.jpg")    
+                        .const-slider__article Октябрь 2019
+                    
+            .swiper-slide
+                .const-slider__item
+                    .const-slider__img
+                        img(src="img/c2.jpg")    
+                        .const-slider__article Сентябрь 2019
+                    
+            .swiper-slide
+                .const-slider__item
+                    .const-slider__img
+                        img(src="img/c3.jpg")    
+                        .const-slider__article Август 2019 
+                    
+            .swiper-slide
+                .const-slider__item
+                    .const-slider__img
+                        img(src="img/c4.jpg")    
+                        .const-slider__article Июль 2019
+                    
+            .swiper-slide
+                .const-slider__item
+                    .const-slider__img
+                        img(src="img/c5.jpg")    
+                        .const-slider__article Июнь 2019 
+                    
+            .swiper-slide
+                .const-slider__item
+                    .const-slider__img
+                        img(src="img/c6.jpg")    
+                        .const-slider__article Май 2019               
+        .swiper-pagination
+        .swiper-button-next
+        .swiper-button-prev
+
+.map-block
+    h2.main-title ЖК расположен в самом центре Красногорска - рядом вся инфраструктура
+        
+    .infrastructure_wrapperMap
+        .infrastructure_fillter
+            ul.infrastructure_list
+                li
+                    button.infrastructure_item(data-group="shop")
+                        .infrastructure_icon.infrastructure_icon-shop
+                            img(src="img/small_group_14.png")
+                        .infrastructure_subtitle
+                            |Магазины
+
+                li
+                    button.infrastructure_item(data-group="med")
+                        .infrastructure_icon.infrastructure_icon-med
+                            img(src="img/small_group_15.png")
+                        .infrastructure_subtitle Поликлиники / Больницы
 
 
-            li
-                button.infrastructure_item(data-group="shcool")
-                    .infrastructure_icon.infrastructure_icon-shcool
-                        img(src="img/small_group_17.png")
-                    .infrastructure_subtitle Школы / ВУЗы
+                li
+                    button.infrastructure_item(data-group="kids")
+                        .infrastructure_icon.infrastructure_icon-kids
+                            img(src="img/small_group_16.png")
+                        .infrastructure_subtitle Детские сады
 
-            li
-                button.infrastructure_item(data-group="park")
-                    .infrastructure_icon.infrastructure_icon-park
-                        img(src="img/small_group_18.png")
-                    .infrastructure_subtitle Парки 
 
-            li
-                button.infrastructure_item(data-group="food")
-                    .infrastructure_icon.infrastructure_icon-food
-                        img(src="img/small_group_19.png")
-                    .infrastructure_subtitle Кафе / Бары
+                li
+                    button.infrastructure_item(data-group="shcool")
+                        .infrastructure_icon.infrastructure_icon-shcool
+                            img(src="img/small_group_17.png")
+                        .infrastructure_subtitle Школы / ВУЗы
 
-            li
-                button.infrastructure_item(data-group="bank")
-                    .infrastructure_icon.infrastructure_icon-bank
-                        img(src="img/small_group_20.png")
-                    .infrastructure_subtitle Банки
+                li
+                    button.infrastructure_item(data-group="park")
+                        .infrastructure_icon.infrastructure_icon-park
+                            img(src="img/small_group_18.png")
+                        .infrastructure_subtitle Парки 
 
-            li
-                button.infrastructure_item(data-group="sport")
-                    .infrastructure_icon.infrastructure_icon-sport
-                        img(src="img/small_group_21.png")
-                    .infrastructure_subtitle Фитнес залы
+                li
+                    button.infrastructure_item(data-group="food")
+                        .infrastructure_icon.infrastructure_icon-food
+                            img(src="img/small_group_19.png")
+                        .infrastructure_subtitle Кафе / Бары
 
-        .infrastructure_control
-            button.infrastructure_btn.infrastructure_btnShow.active Показать все
-            button.infrastructure_btn.infrastructure_btnHide Скрыть все
-    #map(data-latlag="55.834977,37.317508" data-markers="/infrastructure/place.json" style="position:relative;")
+                li
+                    button.infrastructure_item(data-group="bank")
+                        .infrastructure_icon.infrastructure_icon-bank
+                            img(src="img/small_group_20.png")
+                        .infrastructure_subtitle Банки
+
+                li
+                    button.infrastructure_item(data-group="sport")
+                        .infrastructure_icon.infrastructure_icon-sport
+                            img(src="img/small_group_21.png")
+                        .infrastructure_subtitle Фитнес залы
+
+            .infrastructure_control
+                button.infrastructure_btn.infrastructure_btnShow.active Показать все
+                button.infrastructure_btn.infrastructure_btnHide Скрыть все
+        #map(data-latlag="55.834977,37.317508" data-markers="/infrastructure/place.json" style="position:relative;")
 
 
 
