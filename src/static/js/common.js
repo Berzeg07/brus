@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+    $('.plan-choose').click(function() {
+        $('.plan-choose').removeClass('is-active');
+        $(this).addClass('is-active');
+        var tab = $(this).attr('data-tab');
+        $('.genplan-tab').not(tab).css({
+            'display': 'none'
+        });
+        $(tab).fadeIn(400);
+    });
+    $('.plan-select__btn_genplan').click();
+
     $('.corpuses__slide-tabs button').click(function() {
         $('.plan-select__btn').removeClass('active');
         $(this).addClass('active');
