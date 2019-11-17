@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+    $('.corpuses__slide-tabs button').click(function() {
+        $('.plan-select__btn').removeClass('active');
+        $(this).addClass('active');
+        var tab = $(this).attr('data-tab');
+        var adress = $(this).attr('data-adress');
+        $('.corpuse-adress').html(adress);
+        $('.corpuses__slider-wrap').not(tab).css({
+            'display': 'none'
+        });
+        $(tab).fadeIn(400);
+    });
+    $('.corpuses__slide-tabs button:first').click();
+
     $('.burger').click(function() {
         $(this).toggleClass('active');
         $('.dropdownmenu').fadeToggle();
@@ -205,10 +218,62 @@ $(document).ready(function() {
     //Swiper plugin initialization on window resize
     $(window).on('resize', function() {
         initSwiper();
-        console.log(bankSlider);
-
     });
 
+
+
+    var owl = $(".corpuses-slider_8");
+    owl.owlCarousel({
+        loop: false,
+        nav: false,
+        autoplay: false,
+        smartSpeed: 1000,
+        margin: 25,
+        center: false,
+        responsive: {
+            320: {
+                items: 1,
+                margin: 36
+            },
+            600: {
+                items: 2,
+                margin: 20
+            },
+            992: {
+                items: 3,
+                margin: 20
+            },
+            1280: {
+                items: 3,
+                margin: 36
+            }
+        }
+    });
+
+    var owl2 = $(".corpuses-slider_7");
+    owl2.owlCarousel({
+        loop: false,
+        nav: false,
+        autoplay: false,
+        smartSpeed: 1000,
+        margin: 25,
+        center: false,
+        responsive: {
+            320: {
+                items: 1,
+                margin: 18
+            },
+            600: {
+                items: 2,
+                margin: 20
+            },
+            1280: {
+                items: 2,
+                margin: 36
+            }
+        }
+    });
+    //
 });
 
 "use strict";
