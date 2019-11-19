@@ -1,0 +1,1399 @@
+include ./breadcrumbs.pug
+.container.inner-container
+    .main-title.main-title_inner Однокомнатная квартира №46 - Красногорск, ул. Народного Ополчения, д. 2б
+    .inner-cont
+        ul.inner-cont__info
+            li
+                span Корпус
+                span 7
+            li
+                span Секция
+                span 1
+            li
+                span Этаж
+                span 13
+            li
+                span Комнат
+                span 1
+            li.seal
+                button.seal__btn(type="button") 
+                    span Печать
+                    img(src="img/printer.png")
+
+        .inner-cont__slider-wrap
+            .inner-slider.swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        .inner-slider__item
+                            img(src="img/inner-slide.png")
+
+                    .swiper-slide
+                        .inner-slider__item
+                            img(src="img/inner-slide.png")
+
+                    .swiper-slide
+                        .inner-slider__item
+                            img(src="img/inner-slide.png")
+
+                .swiper-button-prev
+                .swiper-button-next
+                .like-slider    
+
+            .swiper-pagination-inner
+
+        ul.inner-cont__info.inner-cont__info_right
+            li
+                span Общая площадь
+                span 
+                    b 33 
+                    |м
+                    sup
+                        small 2
+            li
+                span Жилая площадь
+                span 
+                    b 26,4
+                    |м
+                    sup
+                        small 2
+            li
+                span Площадь кухни
+                span 
+                    b 8
+                    |м
+                    sup
+                        small 2
+            li
+                span Площадь лоджии
+                span 
+                    b 3,8
+                    |м
+                    sup
+                        small 2
+            li.seal
+                span цена за м
+                    sup
+                        small 2
+                span 107 000 &#8381;
+
+        form(action="#").inner-form
+            ul.inner-form__list
+                li
+                    .inner-form__price-title Стоимость квартиры:
+                    .inner-form__price
+                        b 3 498 000 
+                            .more-icon
+                            span руб.
+
+                    .inner-form__price-title Цена с отделкой:
+                    .inner-form__price.inner-form__price_purple
+                        b 3 828 000 
+                            .more-icon
+                            span руб.
+                li
+                    .inner-form__wrap
+                        .inner-form__request-title Заявка на просмотр
+                        input(type="text" placeholder="Имя").inp
+                        input(type="text" placeholder="Телефон").inp.phone-inp
+
+                        button.inner-form__btn(type="submit") Записаться на просмотр
+
+                    .inner-form__installment
+                        span Рассрочка 0%
+                        span напрямую от застройщика!
+
+                    .inner-ipoteka
+                        .inner-ipoteka__item
+                            button.inner-form__btn(type="button") Забронировать
+                        
+                        .inner-ipoteka__about
+                            span Ипотека 9 
+                                b банков
+                            span первый взнос от 10%    
+                        
+                        .inner-ipoteka__link
+                            a(href="#").inner-form__btn.inner-form__btn_green Рассчитать ипотеку
+                        
+
+
+form.recept-form
+    .form-action
+        .form-action__inner
+            .form-action__date Только до 31 октября!
+            ul.form-action__list
+                li
+                    |Квартиры от
+                li
+                    ul.form-action__price
+                        li
+                            |3,39
+                        li
+                            |млн <br>
+                            |руб.       
+
+    .recept-form__main
+        .recept-form__title Оставьте заявку и получите спецпредложение:
+
+        ul.recept-form__inner
+            li
+                span.recept-form__list-title Офис застройщика работает ежедневно, без выходных:
+                ul.recept-form__list
+                    li
+                        |C понедельника по пятницу с 9:00 до 21:00
+                    li   
+                        |суббота и воскресенье с 10:00 до 17:00
+                    li
+                        |Записаться можно по телефону:  
+                        b +7(495) 123-45-67 
+                        |или онлайн
+
+            li.form-action__inp-block
+                input(type="text" placeholder="Имя").inp.recept-form__inp
+                input(type="text" placeholder="Телефон").inp.recept-form__inp.phone-inp
+                button(type="submit").form-btn Отправить заявку
+
+                .checkbox-block.recept-form__check
+                    input(type="checkbox" id="check" checked)
+                    label(for="check") Я согласен на обработку<br> персональных данных                                    
+
+.map-inner#map-inner
+    .map-inner__item
+        span ЖК «Брусчатый посёлок»
+
+.corpuses
+    h2.main-title Выберите квартиру в «ЖК Брусчатый поселок»:
+    ul.plan-select
+        li
+            button.plan-select__btn.plan-select__btn_genplan.plan-choose.is-active(type="button" data-tab="#genplan") Выбрать на генплане
+        li  
+            button.plan-select__btn.plan-select__shahmat.plan-choose(type="button" data-tab="#shahmat") Выбрать на шахматке
+
+    .genplan-tab#genplan
+        .genplan-banner
+            img(src="img/genplan-mob.jpg").genplan-mob
+            img(src="img/genplan.jpg").genplan-desc
+
+            a(href="#").genplan-banner__link.genplan-banner__link_8
+                span Корпус №8
+                span Дом построен
+
+            a(href="#").genplan-banner__link.genplan-banner__link_7
+                span Корпус №7
+                span Дом построен
+
+    .genplan-tab#shahmat
+        .corpuses__content
+            .corpuses__slide-tabs
+                button.plan-select__btn.plan-select__btn_8(data-tab="#section8" data-adress="Центральный проезд") Выбрать корпус №8
+                button.plan-select__btn.plan-select__btn_7(data-tab="#section7" data-adress="ул. Народного Ополчения") Выбрать корпус №7
+
+            .corpuses__inner
+                ul.corpuses__floors
+                    li(data-floor="17") 17
+                    li(data-floor="16") 16
+                    li(data-floor="15") 15
+                    li(data-floor="14") 14
+                    li(data-floor="13") 13
+                    li(data-floor="12") 12
+                    li(data-floor="11") 11
+                    li(data-floor="10") 10
+                    li(data-floor="9") 9
+                    li(data-floor="8") 8
+                    li(data-floor="7") 7
+                    li(data-floor="6") 6
+                    li(data-floor="5") 5
+                    li(data-floor="4") 4
+                    li(data-floor="3") 3
+                    li(data-floor="2") 2
+                    li(data-floor="1") 1
+
+                .corpuses__slider-wrap#section8
+                    .corpuses-title Корпус №8
+                    .corpuses-slider.corpuses-slider_8.owl-carousel
+                        .item
+                            .corpuses__slider-slide
+                                .corpuses__block-title Секция 1
+                                ul.corpuses-slider__list
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="2" data-sail="sales" data-tooltip="Продана").sales 2
+                                        span.corpuse__tooltip Продана
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве").on-sale-action 1
+                                        span.corpuse__tooltip В резерве
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                        .item
+                            .corpuses__slider-slide
+                                .corpuses__block-title Секция 2
+                                ul.corpuses-slider__list
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="2" data-sail="sales" data-tooltip="Продано").sales 2
+                                        span.corpuse__tooltip Продано
+
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                        .item
+                            .corpuses__slider-slide.corpuses__slider-slide_big
+                                .corpuses__block-title Секция 3
+                                ul.corpuses-slider__list
+                                    li.big
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="17" data-room="1" data-sail="sales" data-tooltip="Продана").sales 1
+                                        span.corpuse__tooltip Продана
+                                    li.big
+                                        a(href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="16" data-room="1" data-sail="sales" data-tooltip="Продана").sales 1
+                                        span.corpuse__tooltip Продана
+                                    li.big
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве").on-sale-action 1
+                                        span.corpuse__tooltip В резерве
+                                    li.big
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве").on-sale-action 1
+                                        span.corpuse__tooltip В резерве
+                                    li.big
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.big
+                                        a(href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.big
+                                        a(href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №8
+                                    li.big
+                                        a(href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №8
+                                    li.big
+                                        a(href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №8
+                                    li.big
+                                        a(href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №8
+                                    li.big
+                                        a(href="#" data-floor="1" data-room="2" data-sail="on-sale" data-tooltip="нп").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №8
+
+                .corpuses__slider-wrap#section7
+                    .corpuses-title Корпус №7
+                    .corpuses-slider.corpuses-slider_7.owl-carousel
+                        .item
+                            .corpuses__slider-slide
+                                .corpuses__block-title Секция 1
+                                ul.corpuses-slider__list
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="3" data-sail="sales" data-tooltip="Продана").sales 3
+                                        span.corpuse__tooltip Продана
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве").on-sale-action 1
+                                        span.corpuse__tooltip В резерве
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105").on-sale 3
+                                        span.corpuse__tooltip 3-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                        .item
+                            .corpuses__slider-slide
+                                .corpuses__block-title Секция 2
+                                ul.corpuses-slider__list
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="5" data-room="2" data-sail="sales" data-tooltip="Продано").sales 2
+                                        span.corpuse__tooltip Продано
+
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105").on-sale 1
+                                        span.corpuse__tooltip 1-комнатная №105
+                                    li.small
+                                        a(href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105").on-sale 2
+                                        span.corpuse__tooltip 2-комнатная №105
+
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+                                    li.small
+                                        a(href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9").on-sale нп
+                                        span.corpuse__tooltip Нежилое помещение №9
+
+        .corpuse-adress.corpuse-adress_mob Центральный проезд 
+
+        ul.flat-about
+            li
+                span.flat-about__on-sale - Свободные
+            li
+                span.flat-about__sold - Проданные
+            li
+                span.flat-about__rezerv - Квартира в резерве
+            li
+                .corpuse-adress Центральный проезд 
