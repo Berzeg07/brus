@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+    $("#polzunok").slider({
+        animate: "slow",
+        min: 1000000,
+        max: 10000000,
+        range: true,
+        values: [ 2000000, 7000000 ],
+        step: 10000,
+        slide : function(event, ui) {
+            $("#result-polzunok").html( "<span>" + ui.values[ 0 ] + "</span>" + "<span>" + ui.values[ 1 ] + "</span>");
+        }
+    });
+    $( "#result-polzunok" ).html("<span>" + $("#polzunok").slider("values", 0) + "</span>" + "<span>" + $("#polzunok").slider("values", 1) + "</span>");
+
+    $('.filter-rooms__item').click(function() {
+        $('.filter-rooms__item').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.select-custom select').select2();
+
     $(function() {
         $('.minimized').click(function(event) {
             var i_path = $(this).attr('src-big');
