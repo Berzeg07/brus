@@ -1,4 +1,12 @@
 @font-face {
+    font-family: "HelveticaNeueCyr-Roman";
+    src: url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot");
+    src: local('☺'), url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff") format('woff'), url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Exo2ExtraBold";
     src: url("../fonts/Exo2ExtraBold/Exo2ExtraBold.eot");
     src: local('☺'), url("../fonts/Exo2ExtraBold/Exo2ExtraBold.woff") format('woff'), url("../fonts/Exo2ExtraBold/Exo2ExtraBold.ttf") format('truetype');

@@ -152,6 +152,20 @@ $(document).ready(function() {
         },
     });
 
+    var contSlider = new Swiper('.cont-slider', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
     var bannerSlider = new Swiper('.banner-slider', {
         slidesPerView: 1,
         spaceBetween: 0,
