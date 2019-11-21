@@ -92,6 +92,17 @@ $(document).ready(function() {
         });
     });
 
+    $('.map-btn').click(function() {
+        $('.map-btn').removeClass('active');
+        $(this).addClass('active');
+        var tab = $(this).attr('map-data');
+        $('.map-tab').not(tab).css({
+            'display': 'none'
+        });
+        $(tab).fadeIn(400);
+    });
+    $('.map-btn_adress').click();
+
     $('.plan-choose').click(function() {
         $('.plan-choose').removeClass('is-active');
         $(this).addClass('is-active');
