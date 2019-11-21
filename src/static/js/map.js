@@ -206,13 +206,13 @@ class Map {
             const coordinates = (coordinatesActive_lat, coordinatesActive_lng, coordinates_lat, coordinates_lng) => {
                 pinActive = new ymaps.Placemark([coordinatesActive_lat, coordinatesActive_lng], {}, {
                     iconLayout: "default#image",
-                    iconImageHref: "https://bruschaty.ru/img/icon_map/home.png",
+                    iconImageHref: "img/home.png",
                     iconImageSize: [121, 147],
                     iconImageOffset: [-60, -150]
                 });
                 pin = new ymaps.Placemark([coordinates_lat, coordinates_lng], {}, {
                     iconLayout: "default#image",
-                    iconImageHref: "https://bruschaty.ru/img/icon_map/pin.png",
+                    iconImageHref: "img/pin.png",
                     iconImageSize: [50, 61]
                 });
                 nameMap.geoObjects.add(pinActive).add(pin);

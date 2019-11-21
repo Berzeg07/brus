@@ -2598,20 +2598,22 @@ input:checked + .slider-v2::after {
     }
 }
 
-.catalog__inner-text{
+.catalog__inner-text {
     margin-bottom: 50px;
-    @media(min-width: 1280px){
+    @media(min-width: 1280px) {
         margin-bottom: 150px;
     }
 }
 
-.page-list{
+.page-list {
     font-size: 20px;
-    li{
+
+    li {
         margin-bottom: 25px;
         position: relative;
         padding-left: 29px;
-        &:after{
+
+        &:after {
             content: '';
             position: absolute;
             left: 0;
@@ -2624,22 +2626,20 @@ input:checked + .slider-v2::after {
     }
 }
 
-.inner-text{
-    p{
+.inner-text {
+    p {
         font-size: 20px;
         margin-bottom: 20px;
     }
 
-    .inner-title{
+    .inner-title {
         font-family: "Gilroy-Medium";
         font-size: 36px;
         margin-bottom: 20px;
-        @media(max-width: 992px){
+        @media(max-width: 992px) {
             font-size: 24px;
-
         }
     }
-
 }
 
 .catalog {
@@ -4293,5 +4293,85 @@ input:checked + .slider-v2::after {
             font-family: "Gilroy-Bold";
             color: #DC2646;
         }
+    }
+}
+
+.credit-cont {
+    padding-top: 25px;
+    margin-bottom: 25px;
+    @media(min-width: 1600px) {
+        margin-bottom: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.credit-list {
+    box-shadow: 0 0 20px rgba(142, 142, 142, 0.25);
+    border-radius: 4px;
+    padding: 17px;
+    margin-bottom: 24px;
+    @media(min-width: 1600px) {
+        width: 49%;
+    }
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+
+        &:not(:last-child) {
+            width: 49%;
+            margin-bottom: 40px;
+            @media(min-width: 768px) {
+                width: 24%;
+            }
+            @media(min-width: 992px) {
+                width: 19%;
+                margin-bottom: 0;
+            }
+        }
+
+        &:last-child {
+            width: 100%;
+            @media(min-width: 992px) {
+                width: 19%;
+            }
+        }
+    }
+}
+
+.credit-list__img {
+    max-width: 132px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.credit-list__title {
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    color: #6E869F;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.credit-list__info {
+    font-size: 28px;
+}
+
+.credit-list__btn {
+    font-family: "Gilroy-Bold";
+    color: white;
+    display: inline-block;
+    width: 172px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #2A9F30;
+    border-radius: 4px;
+    @media(max-width: 767px) {
+        width: 100%;
     }
 }
