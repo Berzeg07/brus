@@ -1,1 +1,82 @@
-p модалки
+.modal.modal_filter
+    .modal__inner
+        button(type="button").modal-close
+        
+        form(action="#").filter
+            .select-custom
+                select
+                    option Корпус №8
+                    option Корпус №7
+
+            .filter-title Количество комнат
+
+            ul.filter-rooms
+                li.filter-rooms__item
+                    span 1
+                li.filter-rooms__item
+                    span 2
+                li.filter-rooms__item
+                    span 3            
+
+            .filter-title Этаж
+
+            ul.filter-floor
+                li
+                    label
+                        input(type="text")
+                li
+                    label
+                        input(type="text")
+
+            .filter-title 
+                |Площадь м
+                sup 2
+
+            ul.filter-square
+                li
+                    label
+                        input(type="text")
+                li
+                    label
+                        input(type="text")
+
+            ul.filter-switch
+                li
+                    |Только с отделкой
+                li
+                    input(type="checkbox").switch#s3
+                    label.slider-v2(for="s3") 
+
+            ul.filter-switch
+                li
+                    |Квартиры по акции
+                li
+                    input(type="checkbox").switch#s4
+                    label.slider-v2(for="s4") 
+
+            .filter-title Стоимость, &#8381;
+
+            ul.filter-range
+                li
+                    .result-polzunok#result-polzunok
+                li
+                    #polzunok
+                
+            .filter-title.filter-title_bold Вид из окон
+            
+            ul.filter-check 
+                li.checkbox-block.filter__checkbox
+                    input(type="radio" name="filter-radio" checked)#yard
+                    label(for="yard") Во двор
+                li.checkbox-block.filter__checkbox
+                    input(type="radio" name="filter-radio")#street
+                    label(for="street") На ул. Народного Ополчения
+                li.checkbox-block.filter__checkbox
+                    input(type="radio" name="filter-radio")#center
+                    label(for="center") На Центральный проезд
+
+            ul.filter-btns
+                li
+                    button(type="submit").filter-btn.filter-btn_red Показать 25 квартир
+                li
+                    button(type="button").filter-btn.filter-btn_white Сбросить фильтры

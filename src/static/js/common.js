@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+    $('.filter-popup').click(function(){
+        $('body').toggleClass('overflow');
+        $('.modal_filter').fadeToggle();
+        $('.overlay').fadeToggle();
+        $(window).on('resize', function() {
+            var screenWidth = $(window).width();
+            if (screenWidth > 1279) {
+                $('body').removeClass('overflow');
+                $('.modal').fadeOut();
+                $('.overlay').fadeOut();
+            }
+        });
+    });
+
+    $('.modal-close').click(function(){
+        $('body').removeClass('overflow');
+        $('.modal').fadeOut();
+        $('.overlay').fadeOut();
+    })
+
     var documentSlider = new Swiper('.sertificat-slider', {
         slidesPerView: 4,
         spaceBetween: 59,
