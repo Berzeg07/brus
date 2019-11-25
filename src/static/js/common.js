@@ -1,5 +1,40 @@
 $(document).ready(function() {
 
+    var documentSlider = new Swiper('.sertificat-slider', {
+        slidesPerView: 4,
+        spaceBetween: 59,
+        loop: true,
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            767: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            991: {
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
+            },
+            1279: {
+                slidesPerView: 3
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-doc',
+            prevEl: '.swiper-button-prev-doc',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
     var actionSlider = undefined;
 
     function initAction() {
