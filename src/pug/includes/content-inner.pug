@@ -1,5 +1,9 @@
-include ./breadcrumbs.pug
-.container.inner-container
+.breadcrumbs.wow.fadeIn(data-wow-duration="1.5s")
+    a(href="#") Главная
+    a(href="#") Однокомнатные квартиры
+    a(href="#") Однокомнатная квартира № 46
+    
+.container.inner-container.wow.fadeIn(data-wow-duration="1.5s")
     .main-title.main-title_inner Однокомнатная квартира №46 - Красногорск, ул. Народного Ополчения, д. 2б
     .inner-cont
         ul.inner-cont__info
@@ -116,7 +120,7 @@ include ./breadcrumbs.pug
                         
 
 
-form.recept-form
+form.recept-form.wow.fadeIn(data-wow-duration="1.5s")
     .form-action
         .form-action__inner
             .form-action__date Только до 31 октября!
@@ -156,11 +160,11 @@ form.recept-form
                     input(type="checkbox" id="check" checked)
                     label(for="check") Я согласен на обработку<br> персональных данных                                    
 
-.map-inner#map-inner
+.map-inner#map-inner.wow.fadeIn(data-wow-duration="1.5s" data-wow-offset="20")
     .map-inner__item
         span ЖК «Брусчатый посёлок»
 
-.corpuses
+.corpuses.wow.fadeIn(data-wow-duration="1.5s" data-wow-offset="20")
     h2.main-title Выберите квартиру в «ЖК Брусчатый поселок»:
     ul.plan-select
         li

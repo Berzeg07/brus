@@ -1,6 +1,9 @@
-include ./breadcrumbs.pug
+.breadcrumbs.wow.fadeIn(data-wow-duration="1.5s")
+    a(href="#") Главная
+    a(href="#") Однокомнатные квартиры
+
 .content-wrap
-    .sidebar
+    .sidebar.wow.fadeIn(data-wow-duration="1.5s")
         form(action="#").filter
             .select-custom
                 select
@@ -81,12 +84,12 @@ include ./breadcrumbs.pug
                     button(type="button").filter-btn.filter-btn_white Сбросить фильтры
                         
     .content-cat
-        .content-cat__top
+        .content-cat__top.wow.fadeIn(data-wow-duration="1.5s")
             h1.main-title Однокомнатные квартиры в Красногорске
             a(href="#").plan-select__btn.plan-select__btn_genplan.plan-select__btn_inner Выбрать на генплане
             a(href="#").plan-select__btn.plan-select__shahmat.plan-select__btn_inner Выбрать на шахматке
         
-        .catalog-wrapper
+        .catalog-wrapper.wow.fadeIn(data-wow-duration="1.5s")
             .catalog.swiper-container.swiper-container_catalog
                 .swiper-wrapper.swiper-wrapper_catalog
                     .swiper-slide
@@ -314,7 +317,7 @@ include ./breadcrumbs.pug
             
             .swiper-pagination-catalog
         
-        .inner-text.catalog__inner-text
+        .inner-text.catalog__inner-text.wow.fadeIn(data-wow-duration="1.5s" data-wow-offset="20")
             p Однокомнатные квартиры и студии сегодня находится на пике популярности. Самые выгодные предложения представлены в ближнем Подмосковье, где ведется активная многоэтажная застройка. Небольшое расстояние от столицы и налаженное транспортное сообщение делают однокомнатные квартиры реальной альтернативой дорогостоящему московскому жилью. 
             p ООО «Факт» выступает застройщиком ЖК «Брусчатый поселок» в городе Красногорске в Подмосковье. Мы работаем без посредников, поэтому у нас можно купить жилье действительно недорого.
             
@@ -331,7 +334,7 @@ include ./breadcrumbs.pug
             p Цены на однушки начинаются с 3,1 миллионов рублей. При этом возможна полная оплата стоимости, оформление в рассрочку или ипотеку. Кредитование доступно в банках ВТБ, Сбербанке, «МКБ», «Возрождение» и «Дом РФ». Покупатели могут выбрать наиболее подходящие для себя условия. 
             p Не можете выбрать однокомнатную квартиру в Московской области или ипотечную программу? Наши сотрудники помогут определиться и оформить сделку.
 
-form.recept-form
+form.recept-form.wow.fadeIn(data-wow-duration="1.5s" data-wow-offset="20")
     .form-action
         .form-action__inner
             .form-action__date Только до 31 октября!

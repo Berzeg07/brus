@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    new WOW().init();
+
     $('.filter-popup').click(function(){
         $('body').toggleClass('overflow');
         $('.modal_filter').fadeToggle();
