@@ -1780,6 +1780,72 @@ input:checked + .slider-v2::after {
     }
 }
 
+.photo-slider{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    @media(max-width: 991px){
+        margin-bottom: 30px;
+    }
+    .swiper-slide {
+        text-align: center;
+
+        img {
+            display: block;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 20px;
+        text-align: left;
+        padding-left: 20px;
+        @media(max-width: 767px){
+            text-align: center;
+            padding-left: 0;
+            bottom: 6px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        border: 2px solid #FDFE25;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #FDFE25;
+    }
+
+    .swiper-button-prev {
+        left: 25px;
+        width: 40px;
+        height: 40px;
+        background: url("../img/arrow_back.png") no-repeat center;
+        background-size: contain;
+        @media(max-width: 767px){
+            left: 0px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .swiper-button-next {
+        right: 25px;
+        width: 40px;
+        height: 40px;
+        background: url("../img/arrow_next.png") no-repeat center;
+        background-size: contain;
+        @media(max-width: 767px){
+            right: 0px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
 .swiper-pagination_white {
     .swiper-pagination-bullet {
         border: 2px solid white;
@@ -5403,4 +5469,33 @@ input:checked + .slider-v2::after {
 
 .const-progress_about{
     margin-bottom: 60px;
+}
+
+.photo-list{
+    text-align: center;
+    li{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 45px;
+            @media(max-width: 991px){
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.photo-list__btn{
+    font-family: "Gilroy-Medium";
+    color: #A6A6A6;
+    font-size: 28px;
+    display: inline-block;
+    padding-bottom: 15px;
+    @media(max-width: 767px){
+        font-size: 14px;
+    }
+}
+
+.photo-list__btn.active {
+    color: #304153;
+    border-bottom: 8px solid #FF1E73;
 }
