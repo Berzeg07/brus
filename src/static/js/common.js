@@ -7,8 +7,9 @@ $(document).ready(function() {
         if (screenWidth > 767 && actionSlider == undefined) {
             actionSlider = new Swiper('.action-slider', {
                 slidesPerView: 3,
-                spaceBetween: 23,
+                spaceBetween: 30,
                 loop: false,
+
                 breakpoints: {
                     320: {
                         slidesPerView: 1

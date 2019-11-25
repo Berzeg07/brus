@@ -316,20 +316,20 @@ h1.main-title.main-title_action Спецпредложения на кварти
                             a(href="#").action-slider__btn Выбрать банк
                     
                 .swiper-slide.swiper-slide_action
-                    .action-slider__item
-                        .action-slider__about Вместе дешевле!
+                    .action-slider__item.action-slider__item_discount
+                        .action-slider__about.action-slider__about_top Вместе дешевле!
                         .action-slider__top При покупке 2-ух квартир
                         ul.slider-flats
                             li
                                 .slider-flats__img
                                     img(src="img/fl-min-left.png")
-                                    .slider-flats__about
+                                    .slider-flats__about.slider-flats__about_left
                                         span 1
                                         span комнатная квартира
                             li
                                 .slider-flats__img
                                     img(src="img/fl-min-right.png")
-                                    .slider-flats__about
+                                    .slider-flats__about.slider-flats__about_right
                                         span 2
                                         span комнатная квартира
                             li
@@ -342,7 +342,7 @@ h1.main-title.main-title_action Спецпредложения на кварти
                                         |с каждого м
                                         sup 2
                                     
-                        //- .action-slider__about Вместе дешевле!
+                        .action-slider__about.action-slider__about_big Вместе <br>дешевле!
                         
                         .action-slider__btn-wrap.action-slider__btn-wrap_bg
                             a(href="#").action-slider__btn.action-slider__btn_pink Выбрать квартиру
@@ -379,3 +379,41 @@ h1.main-title.main-title_action Спецпредложения на кварти
         .swiper-button-next.swiper-button-next-action
         .swiper-button-prev.swiper-button-prev-action        
                     
+        
+form.recept-form
+    .form-action
+        .form-action__inner
+            .form-action__date Только до 31 октября!
+            ul.form-action__list
+                li
+                    |Квартиры от
+                li
+                    ul.form-action__price
+                        li
+                            |3,39
+                        li
+                            |млн <br>
+                            |руб.       
+
+    .recept-form__main
+        .recept-form__title Запишитесь на просмотр квартиры!
+
+        ul.recept-form__inner
+            li
+                span.recept-form__list-title Офис застройщика работает ежедневно, без выходных:
+                ul.recept-form__list
+                    li
+                        |C понедельника по пятницу с 9:00 до 21:00
+                    li   
+                        |суббота и воскресенье с 10:00 до 17:00
+                    li
+                        |Записаться можно по телефону:  
+                        b +7(495) 123-45-67 
+                        |или онлайн
+            li.form-action__inp-block
+                input(type="text" placeholder="Имя").inp.recept-form__inp
+                input(type="text" placeholder="Телефон").inp.recept-form__inp.phone-inp
+                button(type="submit").form-btn Отправить заявку
+                .checkbox-block.recept-form__check
+                    input(type="checkbox" id="check" checked)
+                    label(for="check") Я согласен на обработку<br> персональных данных

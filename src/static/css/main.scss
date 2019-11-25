@@ -2565,7 +2565,7 @@ input:checked + .slider-v2::after {
 .catalog-wrapper,
 .const-slider,
 .fast-action__slider,
-.inner-cont__slider-wrap {
+.inner-cont__slider-wrap, .action-slider {
     padding-bottom: 35px;
 
     .swiper-pagination-bullet {
@@ -2599,28 +2599,52 @@ input:checked + .slider-v2::after {
     }
 }
 
-.action-wrap{
+.action-wrap {
     padding-top: 37px;
+    margin-bottom: 40px;
+    @media(min-width: 992px){
+        margin-bottom: 105px;
+    }
 }
 
 .action-slider-wrap {
     position: relative;
-    max-width: 1700px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+
+    .swiper-button-next-action,
+    .swiper-button-prev-action {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        @media(max-width: 1899px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .swiper-button-prev-action {
+        background: url("../img/nav-left.png") no-repeat center;
+        background-size: contain;
+    }
+
+    .swiper-button-next-action {
+        background: url("../img/nav-right.png") no-repeat center;
+        background-size: contain;
+    }
+
     @media(min-width: 1500px) {
-        padding: 0 26px 0px 32px;
+        padding: 0 26px;
     }
     @media(min-width: 1800px) {
-        padding: 0 76px 0px 85px;
+        padding: 0 76px;
     }
 }
 
 .action-slider {
-    padding: 40px 35px;
-
-
+    padding: 40px 10px;
 
     .swiper-wrapper {
         @media(max-width: 767px) {
@@ -2630,13 +2654,16 @@ input:checked + .slider-v2::after {
 
     .swiper-slide {
         text-align: center;
-        min-height: 100%;
-        height: auto;
         @media(max-width: 767px) {
             margin-bottom: 32px;
         }
         @media(min-width: 1280px) {
             width: auto !important;
+        }
+        @media(min-width: 1900px) {
+            &:nth-child(2) {
+                width: 48% !important;
+            }
         }
     }
 }
@@ -2676,6 +2703,9 @@ input:checked + .slider-v2::after {
 
 .action-slider__btn-wrap_bg {
     position: relative;
+    @media(min-width: 1900px){
+        text-align: left;
+    }
 
     &:after {
         content: '';
@@ -2695,11 +2725,19 @@ input:checked + .slider-v2::after {
     font-family: "Gilroy-Medium";
     font-size: 24px;
     margin-bottom: 40px;
+    @media(min-width: 1920px) {
+        font-size: 36px;
+        text-align: left;
+        margin-bottom: 60px;
+    }
 }
 
 .slider-flats__img {
     position: relative;
     width: 100px;
+    @media(min-width: 1900px) {
+        width: 162px;
+    }
 }
 
 .slider-flats__about {
@@ -2716,6 +2754,10 @@ input:checked + .slider-v2::after {
     color: white;
     background: #55B56A;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    @media(min-width: 1900px) {
+        width: 107px;
+        height: 107px;
+    }
 
     span {
         display: block;
@@ -2723,7 +2765,31 @@ input:checked + .slider-v2::after {
         &:first-child {
             font-size: 20px;
             padding-top: 10px;
+            @media(min-width: 1900px) {
+                font-size: 32px;
+                line-height: 22px;
+                padding-top: 16px;
+            }
         }
+
+        &:last-child {
+            @media(min-width: 1900px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.slider-flats__about_left {
+    @media(min-width: 1900px) {
+        right: -49px;
+        top: -37px;
+    }
+}
+
+.slider-flats__about_right {
+    @media(min-width: 1900px) {
+        top: -37px;
     }
 }
 
@@ -2738,8 +2804,28 @@ input:checked + .slider-v2::after {
     margin-bottom: 18px;
 }
 
+.action-slider__about_top {
+    @media(min-width: 1900px) {
+        display: none;
+    }
+}
+
+.action-slider__about_big {
+    text-align: left;
+    font-size: 52px;
+    padding-top: 18px;
+    margin-bottom: 4px;
+    @media(max-width: 1899px) {
+        display: none;
+    }
+}
+
 .slider-flats {
     text-align: center;
+    @media(min-width: 1900px) {
+        display: flex;
+        justify-content: center;
+    }
 
     li {
         display: inline-block;
@@ -2757,12 +2843,35 @@ input:checked + .slider-v2::after {
                 top: 0;
                 font-size: 96px;
                 color: #FF1C74;
+                @media(min-width: 1900px) {
+                    right: -100px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            @media(min-width: 1900px) {
+                margin-right: 125px;
+
+                &:after {
+                    content: '=';
+                    position: absolute;
+                    font-family: "Gilroy-Medium";
+                    right: -76px;
+                    top: 0;
+                    font-size: 96px;
+                    color: #FF1C74;
+                }
             }
         }
 
         &:last-child {
             width: 100%;
             text-align: center;
+            @media(min-width: 1900px) {
+                width: auto;
+                text-align: left;
+            }
         }
     }
 }
@@ -2799,14 +2908,31 @@ input:checked + .slider-v2::after {
     padding: 33px 25px;
     width: 300px;
     overflow: hidden;
+    box-sizing: border-box;
     @media(min-width: 375px) {
         width: 345px;
     }
     @media(min-width: 992px) {
         width: 416px;
     }
+    @media(min-width: 1280px) {
+        padding: 23px 25px;
+        width: 400px;
+    }
+    @media(min-width: 1366px) {
+        padding: 33px 25px;
+        width: 416px;
+    }
     @media(max-width: 991px) {
         padding: 33px 5px;
+    }
+}
+
+.action-slider__item_discount {
+    @media(min-width: 1900px) {
+        width: 100%;
+        padding: 28px 56px;
+        background: url('../img/family.png') no-repeat right bottom;
     }
 }
 
@@ -2825,6 +2951,12 @@ input:checked + .slider-v2::after {
         left: 0;
         top: 0;
         padding: 26px 0 0 14px;
+        @media(min-width: 1900px){
+            font-size: 36px;
+            b{
+                font-size: 20px;
+            }
+        }
     }
 
     .action-slider__btn-wrap {
@@ -2833,6 +2965,12 @@ input:checked + .slider-v2::after {
         left: 50%;
         transform: translateX(-50%);
         padding: 0;
+        @media(min-width: 1280px){
+            bottom: 23px;
+        }
+        @media(min-width: 1366px){
+            bottom: 34px;
+        }
     }
 }
 
